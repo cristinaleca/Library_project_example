@@ -21,7 +21,8 @@
 #Open for adoption:(Adopt an AC):
 Feature: User management
   @AC
-  Scenario:
+  Scenario: Searching books
+
     # Ivana first commit
 
 
