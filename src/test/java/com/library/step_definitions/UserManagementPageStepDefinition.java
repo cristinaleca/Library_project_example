@@ -1,13 +1,13 @@
 package com.library.step_definitions;
 
-import com.library.pages.UserManagementPage_Cihan;
+import com.library.pages.UserManagementPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class UserManagementPageStepDefinition_cihan {
+public class UserManagementPageStepDefinition {
 
-    UserManagementPage_Cihan userManagementPage = new UserManagementPage_Cihan();
+    UserManagementPage userManagementPage = new UserManagementPage();
 
 
     @Given("user navigates to {string} page")

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-public class UserManagementPage_Cihan extends BasePage_Cihan {
+public class UserManagementPage extends BasePage {
 
 
     @FindBy(xpath = "//input[@class='form-control input-sm input-small input-inline']")

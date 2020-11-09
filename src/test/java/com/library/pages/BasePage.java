@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public abstract class BasePage_Cihan {
+public abstract class BasePage {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),20);
 
 
-    public BasePage_Cihan(){
+    public BasePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

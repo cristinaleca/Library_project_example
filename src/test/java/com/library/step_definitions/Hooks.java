@@ -12,7 +12,7 @@ public class Hooks {
     public void setup(Scenario scenario){
         System.out.println(scenario.getName());
         System.out.println(scenario.getSourceTagNames());
-        System.out.println(":::Connecting to the database:::");
+        System.out.println(":::Beginning of Test Execution :::");
     }
 
 
