@@ -20,10 +20,18 @@
 #
 #Evelin
 
-Feature: Book search
-  @AC
-  Scenario: book search by bookname
-    Given user is on the dearch page
-    When user enters bookname in the search box
-    Then Ssytem should display all the available books
-# hi
+
+Feature: Library books search
+  Agile story: Verify that librarian should be able to search for any book,
+  by clicking the “search” box according to the Borrowed by.
+
+  @AC4
+  Scenario: Search books
+    Given The librarian is on the Home page
+
+    When librarian click "Books" module
+
+    And librarian search for books  by "Borrowed by" option
+
+    Then System should display all the books in the "Borrowing by" table.
+
