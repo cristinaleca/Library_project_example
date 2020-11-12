@@ -14,8 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/library/step_definitions",
         dryRun =false,
-        tags = "@librarian"
-
+        tags = "@US2_AC2"
 )
 public class CucumberRunner {
 
