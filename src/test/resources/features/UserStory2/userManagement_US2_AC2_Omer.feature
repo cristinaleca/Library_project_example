@@ -19,13 +19,19 @@
 #Open for adoption:(adopt an AC):
 #AC#8 - As an authorized user, the Librarian should be able to filter Records by the required number of records from the Show Records dropdown
 #Open for adoption:(Adopt an AC):
+
 Feature: User management
-  @AC
-  Scenario:
-// Omer first commit
-// 2. change
 
+  Background:User is on the Librarian login page
+    Given User navigates to the login page
+    And User logs in as an authorized user
 
+  @US2_AC2
+  Scenario:Searching users as Librarian able to choose Users page
+    Given The librarian verifies on the Home page
+    When librarian click User page module
+    Then System should display User Page
 
+   Scenario:
 
 
