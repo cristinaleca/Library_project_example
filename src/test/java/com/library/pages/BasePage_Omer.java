@@ -1,7 +1,6 @@
 package com.library.pages;
 
 import com.library.utils.BrowserUtils;
-import com.library.utils.ConfigurationReader;
 import com.library.utils.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,13 +9,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public  class BasePage {
+public abstract class BasePage_Omer {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),20);
 
 
-    public BasePage(){
+    public BasePage_Omer(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+
 
     @FindBy(xpath = "/html/head/title")
     private WebElement pageTitle;
@@ -68,15 +69,9 @@ public  class BasePage {
 
         wait.until(ExpectedConditions.elementToBeClickable(menuElement)).click();
 
-
     }
 
-    public void navigateToWebPage (){
-        String webPage = ConfigurationReader.getProperty("libraryURL");
-        Driver.getDriver().get(webPage);
-        System.out.println("Driver navigated to the " + webPage);
 
- }
 
 
 }
