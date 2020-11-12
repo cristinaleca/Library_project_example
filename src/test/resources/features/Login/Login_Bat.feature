@@ -6,7 +6,7 @@ Feature: Login feature
     Then I login as a "<role>"
     Then dashboard should be displayed
 
-    Examples:
+    Examples: these are the different roles
     |role|
     |librarian|
     |student  |
