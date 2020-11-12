@@ -6,6 +6,7 @@ Feature: login
 
   @allRolesTogether
   Scenario Outline: Login as a <role>
+
     When user log in as a "<role>"
     Then System should display "<landingPage>"
     And System will show personal greeting as hello "<name>"
