@@ -1,6 +1,6 @@
 Feature: Login feature
 
-  @librarian @student
+  @librarian  @allRoles
   Scenario Outline: Login as a <role>
     Given I am on the login page
     Then I login as a "<role>"
