@@ -11,6 +11,7 @@ public class UserPage_Omer extends BasePage {
 
     BasePage basePage =new BasePage();
 
+
     @FindBy(linkText = "Users")
     private WebElement usersPageLink;
 
@@ -30,6 +31,9 @@ public class UserPage_Omer extends BasePage {
 
         Assert.assertEquals(expected,actual);
         System.out.println("System display successfully User Page ");
+
+
+
     }
 
 }
