@@ -10,7 +10,7 @@ public class Login_StepDefinitions_Bat {
 LoginPage login = new LoginPage();
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
-        String url = ConfigurationReader.getProperty("LibraryURL");
+        String url = ConfigurationReader.getProperty("libraryURL");
         Driver.getDriver().get(url);
     }
 
