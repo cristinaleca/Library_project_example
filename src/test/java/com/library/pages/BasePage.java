@@ -21,6 +21,8 @@ public  class BasePage {
     @FindBy(xpath = "/html/head/title")
     private WebElement pageTitle;
 
+
+
     @FindBy(linkText = "Users")
     private WebElement usersPageLink;
 
